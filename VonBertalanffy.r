@@ -106,7 +106,7 @@ if (nrow(data) > 1) {
   }
   df.params <- do.call(rbind, params)
   write.table(df.params, file.path(wd, "output", "VBGC", paste0("VBGC_", sp, "_summary_table.csv")), sep = ";", row.names = FALSE)
-  return(df.params)
+  print(df.params)
 } else {
   message("Not enougth data to plot VBGC")
 }
